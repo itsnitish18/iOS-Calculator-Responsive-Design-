@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap');
+body,html{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.operate
+{
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.calcy
+{
+  margin-top: 8vh;
+  padding:20px;
+  border: 2px solid black;
+  background-color: #393e46;
+  border-radius: 25px;
+  box-shadow:hsl(216, 18%, 16%) 1px 1px 3px 2px;
+
+}
+.heading
+{
+  text-align: center;
+  color: white;
+  font-family: 'Crimson Text', serif;
+}
+.row
+{
+  background-color: #393e46;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 100%;
+  padding:1.5px;
+  gap: 4px;
+}
+.answer
+{
+  display: flex;
+  justify-content: center;
+  background-color:#393e46;
+}
+.answer input
+{
+ height: 40px;
+ width : 20.75vw;
+ margin-bottom:2vw;
+ padding: 2px;
+ border-radius:20px;
+ color:black;
+ font-size: 20px;
+ border: 1px solid rgb(0, 0, 0);
+ box-shadow:hsl(216, 18%, 16%) 1px 1px 3px 2px;
+ text-align: end;
+}
+.row button
+{
+  height: 80px;
+  width:80px;
+  margin: 1.5px;
+  border-radius: 50%;
+  border: 1px solid linear-gradient(to right, red, purple);;
+  background-color: #222831;
+  color: white;
+  font-size: 22px;
+  box-shadow:#222831 3px 3px 3px 2px;
+  
+}
+button:hover
+{
+  transform: scale(1.05);
+  transition : 0.3s;
+   
+}
+@media screen and (max-width:450px) 
+{  
+
+   body 
+   {
+    background-color: black;
+   }
+   .heading
+   {
+    display: none;
+   }
+   .calcy
+   {
+    display: flex;
+    flex-direction: column;
+    margin-top:28vh;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  
+   }
+   .row{
+    background-color: transparent;
+   }
+   .answer
+   {
+    background-color: black;
+    color: transparent;
+
+   }
+   .answer input
+   {
+    width: 80vw ;
+    margin-bottom: 3vh;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+   }
+   .row button
+   {
+    background-color: #616161c9;
+    font-size: 33px;
+    box-shadow: none;
+    border: none;
+   }
+   .row .color  
+   {
+      background-color:#FDB819;
+   }
+   .row .s1
+   {
+    font-size: 24px;
+   }
+   .row button:nth-child(1):hover
+   {
+    background-color: rgba(211, 211, 211, 0.74);
+   }
+   .row button:nth-child(2):hover
+   {
+    background-color: rgba(211, 211, 211, 0.74);
+   }
+   .row button:nth-child(3):hover
+   {
+    background-color: rgba(211, 211, 211, 0.74);
+   }
+
+}
